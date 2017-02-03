@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+              android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+    <TextView
+        android:text="Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:id="@+id/textViewLocation"/>
+
+    <TextView
+        android:text="Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:layout_marginEnd="60dp"
+        android:id="@+id/textViewCityTemp"
+        android:layout_alignBaseline="@+id/textViewLocation"
+        android:layout_alignBottom="@+id/textViewLocation"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:text="Updated On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewCityTemp"
+        android:layout_alignRight="@+id/textViewCityTemp"
+        android:layout_alignEnd="@+id/textViewCityTemp"
+        android:id="@+id/textViewUpdatedOn"
+        android:textSize="10sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignBottom="@+id/textViewUpdatedOn"
+        android:layout_toRightOf="@+id/textViewUpdatedOn"
+        android:layout_toEndOf="@+id/textViewUpdatedOn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/imageViewFavorite"/>
+</RelativeLayout>
